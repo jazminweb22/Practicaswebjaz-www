@@ -1,0 +1,10 @@
+/*DOCUMENTO CSS*/
+
+*principal  { display: block;
+               width: 200px;
+               padding: 8px;
+               background-color: blue;
+               text-align: center;
+               text-transform: uppercase;
+               text-decoration: none;
+               color: black;}

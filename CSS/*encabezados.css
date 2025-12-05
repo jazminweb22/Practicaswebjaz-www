@@ -1,0 +1,13 @@
+/*  Documento css css*/
+
+body{background-color: #ffebcd;}
+
+h1, h3 {color:red;font-size: 22 px; 
+    text-align: center;
+    line-height:130% ;}
+
+h2 {color:green;}
+
+h4 {color:blue;}
+h5 {color: goldenrod;}
+h6 {color: yellow;}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 02: Unidades de Medida CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .nota {
+            margin-top: 20px;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+            background-color: #e9f5ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📊 Unidades de Medida CSS y Equivalencias en Píxeles (px)</h1>
+
+    <div class="nota">
+        *Nota Importante:* Las equivalencias en píxeles para unidades relativas (como em, rem, %, vw, vh) dependen de factores externos (fuente base, elemento padre, o tamaño de la ventana del navegador). Las equivalencias a continuación son ejemplos basados en la configuración por defecto del navegador (generalmente *16px* para el tamaño de fuente base) o las definiciones estándar.
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de Unidad</th>
+                <th>Unidad CSS</th>
+                <th>Descripción</th>
+                <th>Equivalencia Aproximada en Píxeles (px)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Absolutas</td>
+                <td>*px*</td>
+                <td>Píxeles. Es la unidad más común en web.</td>
+                <td>1 px = 1 píxel (por definición en el contexto CSS)</td>
+            </tr>
+            <tr>
+                <td>*in*</td>
+                <td>Pulgadas. (1in = 2.54cm)</td>
+                <td>1 in = *96 px* (Estándar CSS)</td>
+            </tr>
+            <tr>
+                <td>*cm*</td>
+                <td>Centímetros.</td>
+                <td>1 cm $\approx$ *37.79 px* (96px / 2.54)</td>
+            </tr>
+            <tr>
+                <td>*mm*</td>
+                <td>Milímetros. (1mm = 0.1cm)</td>
+                <td>1 mm $\approx$ *3.78 px*</td>
+            </tr>
+            <tr>
+                <td>*pt*</td>
+                <td>Puntos. (1pt = 1/72 de pulgada)</td>
+                <td>1 pt $\approx$ *1.33 px* (96px / 72)</td>
+            </tr>
+            <tr>
+                <td>*pc*</td>
+                <td>Picas. (1pc = 12pt)</td>
+                <td>1 pc $\approx$ *16 px* (12 * 1.33px)</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">Relativas (Tipografía)</td>
+                <td>*em*</td>
+                <td>Relativo al tamaño de la fuente del *elemento padre*.</td>
+                <td>Si el padre tiene 16px: 1 em = *16 px*</td>
+            </tr>
+            <tr>
+                <td>*rem*</td>
+                <td>Relativo al tamaño de la fuente del *elemento raíz (html)*.</td>
+                <td>Si el raíz tiene 16px: 1 rem = *16 px*</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Relativas (Viewport)</td>
+                <td>*vw*</td>
+                <td>1% del ancho del Viewport (ventana visible).</td>
+                <td>En un ancho de 1200px: 1 vw = *12 px*</td>
+            </tr>
+            <tr>
+                <td>*vh*</td>
+                <td>1% de la altura del Viewport (ventana visible).</td>
+                <td>En una altura de 800px: 1 vh = *8 px*</td>
+            </tr>
+            
+            <tr>
+                <td>Relativas (Otras)</td>
+                <td>*%*</td>
+                <td>Porcentaje, relativo al valor del elemento padre.</td>
+                <td>Si el padre tiene 100px: 50% = *50 px*</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
